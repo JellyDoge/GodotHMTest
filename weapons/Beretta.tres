@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://djl23kngpa0qh"]
+
+[ext_resource type="Script" path="res://weapons/weaponresources.gd" id="1_hxlc2"]
+
+[resource]
+script = ExtResource("1_hxlc2")
+Weapon_Name = "Beretta"
+Activate_Anim = "Beretta Activate"
+Shoot_Anim = "Beretta Shoot"
+Reload_Anim = "Beretta Reload"
+Deactivate_Anim = "Beretta Exit"
+Out_Of_Ammo_Anim = "Beretta OOA"
+Current_Ammo = 15
+Reserve_Ammo = 15
+Magazine = 15
+Max_Ammo = 30
+Auto_Fire = false

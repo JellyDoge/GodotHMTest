@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://5i8s2s00xios"]
+
+[ext_resource type="Script" path="res://weapons/weaponresources.gd" id="1_qg0vw"]
+
+[resource]
+script = ExtResource("1_qg0vw")
+Weapon_Name = "KrissVector"
+Activate_Anim = "Vector Activate"
+Shoot_Anim = "Vector Shoot"
+Reload_Anim = "Vector Reload"
+Deactivate_Anim = "Vector Exit"
+Out_Of_Ammo_Anim = "Vector OOA"
+Current_Ammo = 30
+Reserve_Ammo = 30
+Magazine = 30
+Max_Ammo = 30
+Auto_Fire = true

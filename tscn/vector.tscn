@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c41sq8fc5by3b"]
+
+[ext_resource type="Script" path="res://scripts/weaponpickup.gd" id="1_lnn25"]
+[ext_resource type="Texture2D" uid="uid://31rjifms47nh" path="res://sprites/weapon/vectorreal.png" id="2_83vpt"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 13
+script = ExtResource("1_lnn25")
+weapon_name = "Vector"
+current_ammo = 30
+reserve_ammo = 30
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_83vpt")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-8, -5, 9, -5, 9, 4, -9, 4, -9, -5)

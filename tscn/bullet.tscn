@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://6jyf7q4hasi6"]
+
+[ext_resource type="Texture2D" uid="uid://cn5vrhdpistd3" path="res://sprites/character/player.png" id="1_l27tt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3yyyw"]
+size = Vector2(8, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d6tcf"]
+size = Vector2(16, 16)
+
+[node name="Bullet" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3yyyw")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.541176, 0.541176, 0.541176, 1)
+scale = Vector2(0.5, 0.25)
+texture = ExtResource("1_l27tt")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+shape = SubResource("RectangleShape2D_d6tcf")
